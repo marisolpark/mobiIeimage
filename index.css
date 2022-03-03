@@ -1,9 +1,9 @@
-
+/* -----------------------------it affects everything----------------------------- */
 *{
     margin-top: 0;
     margin-left: 0;
 }
-/* it affects everything */
+
 p{
     font-family:'Syne Mono', monospace;
     width: 25%;
@@ -31,8 +31,30 @@ h2{
     text-align: center;
     color: white;
 }
+.subTitle{
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+    padding-left: 60px;
+}
+h5{
+    justify-content: right;
+    font-family:'Syne Mono', monospace;
+    width: 25%;
+    color: white;
+    font-size: 100%;
 
-/* it affects only the index page */
+}
+   
+
+
+
+/* -----------------------------it affects only the index page----------------------------- */
+.indexBg{
+    background-image: url(images/indexbackground.png);
+}
+
+/* this secction affects the artist info */
 .artist{
     display: flex;
     justify-content: space-between;
@@ -49,21 +71,95 @@ h2{
     justify-content: left;
 }
 
-.indexBg{
-     background-image: url(images/indexbackground.png);
-}
-
-.indexGridImg{
-    width: 30%;
-    border: 8px solid whitesmoke;
-}
-.indexGridImg:hover{
-    background-position: 2000px 1000px;
-}
-
+/* this section affect the grid with the hyperlink imgs */
 .box1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 68px;
+    padding-bottom: 20px;
+}
+.indexGridImg{
+    width: 30%;
+    border: 8px solid whitesmoke;
+}
+
+/* Glitch title --> I got the effect by following this video https://youtu.be/7Xyg8Ja7dyY */
+.glitchTxt{
+    text-shadow: 
+    0.05em 0 0 #F9E900, 
+    -0.025em -0.05em 0 #FF8811, 
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75); 
+    animation: glitch 600ms infinite;
+    position: relative;
+}
+.glitchTxt span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.glitchTxt span:first-child{
+    animation: glitch 850ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 40%);
+    transform: translate(-0.020em, 0);
+}
+.glitchTxt span:last-child{
+    animation: glitch 350ms infinite;    
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    transform: translate(0.030em, -0.025em);
+}
+
+@keyframes glitch{
+    0%{
+        text-shadow: 
+        0.05em 0 0 #F9E900, 
+        -0.05em -0.025em 0 #FF8811, 
+        -0.025em 0.05em 0 #548687;  
+    }
+    14%{
+        text-shadow: 
+        0.05em 0 0 #F9E900, 
+        -0.05em -0.025em 0 #FF8811, 
+        -0.025em 0.05em 0 #548687;  
+    }
+    15%{
+        text-shadow: 
+        -0.05em -0.025em 0 #F9E900, 
+        0.025em 0.025em 0 #FF8811, 
+        -0.05em -0.05em 0 #548687;  
+    }
+    49%{
+        text-shadow: 
+        -0.05em -0.025em 0 #F9E900, 
+        0.025em 0.025em 0 #FF8811, 
+        -0.05em -0.05em 0 #548687;  
+    }
+    50%{
+        text-shadow: 
+        0.025em 0.05 0 #F9E900, 
+        0.05em 0 0 #FF8811, 
+        0 -0.05em 0 #548687;  
+    }
+    99%{
+        text-shadow: 
+        0.025em 0.05 0 #F9E900, 
+        0.05em 0 0 #FF8811, 
+        0 -0.05em 0 #548687;  
+    }
+    100%{
+        text-shadow: 
+        -0.025em 0 0 #F9E900, 
+        -0.025em -0.025em 0 #FF8811, 
+        -0.025em -0.05em 0 #548687;  
+    }
+}
+
+/* This affects only the explanation page  */
+.backIcon{
+    margin-top: 5px;
+    width: 3.5%;
+}
+.explTitle{
+    color: black;
+    font-weight: 1000;
 }
