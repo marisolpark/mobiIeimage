@@ -157,9 +157,43 @@ h5{
 /* This affects only the explanation page  */
 .backIcon{
     margin-top: 5px;
-    width: 3.5%;
+    width: 5%;
 }
 .explTitle{
-    color: black;
+    color: white;
     font-weight: 1000;
+    animation: glitch 600ms infinite;
+}
+
+.expeBg{
+    background-image: url(images/expl_background.jpeg);
+}
+
+.vimeo{
+    border: 5px solid white;
+    width: 540px;
+    height: 400px;
+    justify-content: center;
+
+}
+
+.clickMore{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-decoration: none;
+}
+.fP{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clickMore:hover{
+    animation: glitch 600ms infinite;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
 }
