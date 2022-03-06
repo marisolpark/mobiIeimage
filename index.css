@@ -31,23 +31,33 @@ h2{
     text-align: center;
     color: white;
 }
+
 .subTitle{
     display: flex;
     justify-content: center;
     justify-content:space-around;
     padding-left: 60px;
 }
-h5{
-    justify-content: right;
+
+.toExpButton{
+    /* justify-content: right; */
+    font-family:'Syne Mono', monospace;
+    width: 25%;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+.toExpButton:hover{
+    animation: glitch 600ms infinite;
+}
+.subTitleA{
     font-family:'Syne Mono', monospace;
     width: 25%;
     color: white;
     font-size: 100%;
-
+    text-decoration: none;
 }
-   
-
-
+ 
 
 /* -----------------------------it affects only the index page----------------------------- */
 .indexBg{
@@ -72,6 +82,15 @@ h5{
 }
 
 /* this section affect the grid with the hyperlink imgs */
+.hoverGif{
+    background-image: url(images/grid_image.jpg);
+    /* width: 30%; */
+}
+.hoverGif:hover{
+    background-image: url(images/grid_gif.gif);
+}
+
+
 .box1{
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +127,6 @@ h5{
     clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
     transform: translate(0.030em, -0.025em);
 }
-
 @keyframes glitch{
     0%{
         text-shadow: 
@@ -154,11 +172,12 @@ h5{
     }
 }
 
-/* This affects only the explanation page  */
+/* This affects only the explanation page */
 .backIcon{
     margin-top: 5px;
     width: 5%;
 }
+
 .explTitle{
     color: white;
     font-weight: 1000;
@@ -176,24 +195,180 @@ h5{
     justify-content: center;
 
 }
-
 .clickMore{
     color: white;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     text-decoration: none;
+    padding-bottom: 50px;
 }
 .fP{
     margin-left: auto;
     margin-right: auto;
 }
-
 .clickMore:hover{
     animation: glitch 600ms infinite;
 }
+
 .contenedor{
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+}
+
+/* Satellite Arts Project buttons and text */
+.infoButton1{
+    width: 3%;
+    position: absolute;
+    top: 480px;
+    left: 925px;
+}
+.hide1{
+    display: none;
+    background-color: aqua;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.infoButton1:hover + .hide1{
+    display: block;
+}
+
+.mariOp1{
+    width: 3.5%;
+    position: absolute;
+    top: 540px;
+    left: 925px;
+}
+.mariInt1{
+    display: none;
+    background-color: #FF8811;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.mariOp1:hover + .mariInt1{
+    display: block;
+}
+
+.miloOp1{
+    width: 7%;
+    position: absolute;
+    top: 580px;
+    left: 902px;
+}
+.miloOp1:hover + .miloInt1{
+    display: block;
+}
+.miloInt1{
+    display: none;
+    background-color: #25ff11;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Hole in Space buttons and text */
+.infoButton2{
+    width: 3%;
+    position: absolute;
+    left: 925px;
+    top: 1090px;
+}
+.hide2{
+    display: none;
+    background-color: aqua;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.infoButton2:hover + .hide2{
+    display: block;
+}
+
+.mariOp2{
+    width: 3.5%;
+    position: absolute;
+    top: 1155px;
+    left: 925px;
+}
+.mariInt2{
+    display: none;
+    background-color: #FF8811;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.mariOp2:hover + .mariInt2{
+    display: block;
+}
+
+.miloOp2{
+    width: 7%;
+    position: absolute;
+    top: 1195px;
+    left: 902px;
+}
+.miloInt2{ 
+    display: none;
+    background-color: #25ff11;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.miloOp2:hover + .miloInt2{
+    display: block;
+}
+
+/* Electronic Cafe buttons and text */
+.infoButton3{
+    width: 3%;
+    position: absolute;
+    left: 925px;
+    top: 1710px;
+}
+.hide3{
+    display: none;
+    background-color: aqua;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.infoButton3:hover + .hide3{
+    display: block;
+}
+
+.mariOp3{
+    width: 3.5%;
+    position: absolute;
+    top: 1775px;
+    left: 925px;
+}
+.mariInt3{
+    display: none;
+    background-color: #FF8811;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.mariOp3:hover + .mariInt3{
+    display: block;
+}
+
+.miloOp3{
+    width: 7%;
+    position: absolute;
+    top: 1815px;
+    left: 902px;
+}
+.miloInt3{
+    display: none;
+    background-color: #25ff11;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.miloOp3:hover + .miloInt3{
+    display: block;
 }
