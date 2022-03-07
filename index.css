@@ -57,6 +57,11 @@ h2{
     font-size: 100%;
     text-decoration: none;
 }
+
+header{
+    background-color: transparent;
+    position: fixed;
+}
  
 
 /* -----------------------------it affects only the index page----------------------------- */
@@ -175,7 +180,7 @@ h2{
 /* This affects only the explanation page */
 .backIcon{
     margin-top: 5px;
-    width: 5%;
+    width: 50%;
 }
 
 .explTitle{
@@ -221,7 +226,7 @@ h2{
 .infoButton1{
     width: 3%;
     position: absolute;
-    top: 480px;
+    top: 405px;
     left: 925px;
 }
 .hide1{
@@ -238,7 +243,7 @@ h2{
 .mariOp1{
     width: 3.5%;
     position: absolute;
-    top: 540px;
+    top: 470px;
     left: 925px;
 }
 .mariInt1{
@@ -255,7 +260,7 @@ h2{
 .miloOp1{
     width: 7%;
     position: absolute;
-    top: 580px;
+    top: 510px;
     left: 902px;
 }
 .miloOp1:hover + .miloInt1{
@@ -274,7 +279,7 @@ h2{
     width: 3%;
     position: absolute;
     left: 925px;
-    top: 1090px;
+    top: 1015px;
 }
 .hide2{
     display: none;
@@ -290,7 +295,7 @@ h2{
 .mariOp2{
     width: 3.5%;
     position: absolute;
-    top: 1155px;
+    top: 1080px;
     left: 925px;
 }
 .mariInt2{
@@ -307,7 +312,7 @@ h2{
 .miloOp2{
     width: 7%;
     position: absolute;
-    top: 1195px;
+    top: 1120px;
     left: 902px;
 }
 .miloInt2{ 
@@ -326,7 +331,7 @@ h2{
     width: 3%;
     position: absolute;
     left: 925px;
-    top: 1710px;
+    top: 1635px;
 }
 .hide3{
     display: none;
@@ -342,7 +347,7 @@ h2{
 .mariOp3{
     width: 3.5%;
     position: absolute;
-    top: 1775px;
+    top: 1700px;
     left: 925px;
 }
 .mariInt3{
@@ -359,7 +364,7 @@ h2{
 .miloOp3{
     width: 7%;
     position: absolute;
-    top: 1815px;
+    top: 1740px;
     left: 902px;
 }
 .miloInt3{
