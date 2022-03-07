@@ -95,6 +95,11 @@ header{
     background-image: url(images/grid_gif.gif);
 }
 
+figcaption{
+    color: white;
+    font-family:'Syne Mono', monospace;
+}
+
 
 .box1{
     display: flex;
